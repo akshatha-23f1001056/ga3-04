@@ -1,5 +1,8 @@
 name: Daily Auto Commit
 
+permissions:
+  contents: write   # 🔥 This fixes the 403 error
+
 on:
   schedule:
     - cron: '0 10 * * *'   # Runs daily at 10:00 UTC
